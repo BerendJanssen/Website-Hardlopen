@@ -1,0 +1,82 @@
+body {
+    background: rgb(220, 255, 250);
+    font-family: 'Arial Black', Arial;
+    font-weight: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 1;
+}
+
+header {
+    background-image: url(../Images/Header_achtergrond.jpg);
+    height: 20%;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 1em;
+    background: white;
+    margin-left: 1em;
+    border-radius: 10%;
+}
+
+.overzicht {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section {
+    text-align: center;
+}
+
+section ol li {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li:nth-child(4) {
+
+}
+
+nav ul li {
+    background: white;
+    padding: 1%;
+    margin: 5%;
+    list-style-type: none;
+    border-radius: 10%;
+}
+
+    a:link {
+        color: black;
+    }
+
+table {
+    border: black solid 1px;
+    margin: 3% 15% 3% 15%;
+    padding: 1em;
+    text-align: center;
+}
+
+table tr td {
+    border: black solid 1px;
+}
+
+
+
+footer {
+    background: rgb(153, 182, 178);
+    color: black;
+    padding: 20px;
+}
+
