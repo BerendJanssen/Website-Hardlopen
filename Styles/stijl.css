@@ -1,5 +1,5 @@
 body {
-    background: rgb(220, 255, 250);
+    background: rgb(225, 225, 225);
     font-family: 'Arial Black', Arial;
     font-weight: 16px;
 }
@@ -7,76 +7,129 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 2em 1;
+    padding: 2em;
 }
 
 header {
     background-image: url(../Images/Header_achtergrond.jpg);
-    height: 20%;
+    height: 33%;
 }
 
 h1 {
     font-size: 2em;
     padding: 1em;
-    background: white;
+    background: rgb(68, 68, 160);
+    color: white;
+    border-radius: 15%;
     margin-left: 1em;
-    border-radius: 10%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 27em 0em 0em;
+}
+
+nav ul li {
+    background: white;
+    padding: 1em;
+    margin: 5%;
+    list-style-type: none;
+    border-radius: 15%;
+}
+
+main {
+    margin: 2em;
+}
+
+img {
+    margin: 1em;
+}
+
+.indexfotos {
+    margin: 0.5em;
+}
+
+h2 {
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: rgb(68, 68, 160);
+    color: white;
+}
+
+h3 {
+    padding: 0.2em 0em;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
 }
 
 .overzicht {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 1em;
+.overzicht p {
+    font-size: 1.2em;
+    margin: 0%;
+}
+
+.overzicht ul {
+    list-style-type: none;
+    margin-right: 2em;
 }
 
 section {
-    text-align: center;
+    margin: 1em 0em;
+    padding: 1em;
 }
 
-section ol li {
-    list-style-type: none;
+section p {
+    margin-right: 50%;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li:nth-child(4) {
-
-}
-
-nav ul li {
+section:nth-child(even) {
     background: white;
-    padding: 1%;
-    margin: 5%;
-    list-style-type: none;
-    border-radius: 10%;
+    border:  rgb(68, 68, 160) solid 0.5em;
 }
 
-    a:link {
-        color: black;
-    }
+section:nth-child(odd) {
+    background:  rgb(68, 68, 160);
+    color: white;
+}
 
 table {
-    border: black solid 1px;
-    margin: 3% 15% 3% 15%;
+    border: rgb(68, 68, 160) solid 0.5em;
     padding: 1em;
     text-align: center;
+    background: white;
 }
 
 table tr td {
-    border: black solid 1px;
+    border: rgb(68, 68, 160) solid 0.5em;
+    padding: 1em;
 }
-
-
 
 footer {
-    background: rgb(153, 182, 178);
-    color: black;
-    padding: 20px;
+    background: lightblue;
+    color: rgb(100, 100, 100);
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
 }
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0em 3em;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.3em;
+}
+
 
