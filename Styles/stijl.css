@@ -1,20 +1,48 @@
+/* achtergrondkleur en font karaktiriestieken */
 body {
-    background: rgb(225, 225, 225);
+    background: rgb(200, 200, 200);
     font-family: 'Arial Black', Arial;
     font-weight: 16px;
 }
 
+/* Dit zet de elementen, h1 en de nav, naast elkaar */
 header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
 }
 
+/* Achtergrondfoto header */
 header {
     background-image: url(../Images/Header_achtergrond.jpg);
     height: 33%;
 }
 
+/* Link die nog niet bezocht is */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+  
+/* Link die al bezocht is*/
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+  
+/* Muis boven de link */
+a:hover {
+    color: rgb(68, 68, 160);
+    text-decoration: none;
+}
+  
+/* Link terwijl die geklikt wordt */
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* karaktieristieken h1 */
 h1 {
     font-size: 2em;
     padding: 1em;
@@ -24,12 +52,14 @@ h1 {
     margin-left: 1em;
 }
 
+/* Dit zet alle navigatie-items naast elkaar */
 nav ul {
     display: flex;
     justify-content: flex-start;
     margin: 1em 27em 0em 0em;
 }
 
+/* Dit bepaald hoe de navigatiemenu-knopjes er uit zien */
 nav ul li {
     background: white;
     padding: 1em;
@@ -38,18 +68,35 @@ nav ul li {
     border-radius: 15%;
 }
 
+/* Dit zorgt er voor dat de main tussen de zijkant van het scherm, de header en de footer wat extra ruimte heeft */
 main {
     margin: 2em;
 }
 
+/* Dit zorgt er voor dat er rond elk plaatje een beetje extra lege ruimte is */
 img {
     margin: 1em;
 }
 
+/* Dit zorgt er voor dat specifiek de foto's op de homepagina de juiste ruimte tussen elkaar hebben*/
 .indexfotos {
     margin: 0.5em;
 }
 
+/* Dit zet de h3 en link tekst onderop de homepagina centraal */
+.tcslink {
+    text-align: center;
+    padding: 2em 1em 5em 1em;
+}
+
+/* Dit bepaald hoe de link onderaan de homepagina er uit ziet */
+.tcslink a {
+    padding: 1em;
+    border: 0.5em solid rgb(68, 68, 160);
+    background: white;
+}
+
+/* Karaktiriestieken h2 */
 h2 {
     text-align: center;
     padding: 1em;
@@ -58,48 +105,66 @@ h2 {
     color: white;
 }
 
+/* De padding hier zorgt er voor dat de kleinere kopjes in de blokken tekst wat meer aandacht trekken, ook heb ik ze iets groter gemaakt dan de standaard h3 grootte */
 h3 {
     padding: 0.2em 0em;
     font-size: 1.5em;
 }
 
+/* Ik vond de standaardgrootte van h4 ook net iets te klein */
 h4 {
     font-size: 1.25em;
 }
 
+/* Dit zorgt er voor dat op de pagina's afstanden, tips & tricks en routes de text in het kleine menu'tje bovenaan de pagina gecentreerd is */
 .overzicht {
     text-align: center;
 }
 
+/* Dit maakt de tekst in de menu'tjes net iets groter, en de margin op 0% hier maakt het net wat compacter wat ik mooier vond */
 .overzicht p {
     font-size: 1.2em;
-    margin: 0%;
+    margin:0%;
 }
 
+/* Dit haalt de bullet-points in het kleine menu'tje weg, de margin aan de rechter kant zorgt ervoor dat het gecentreerd is omdat de bullet-points het iets naar rechts hadden verschoven */
 .overzicht ul {
     list-style-type: none;
     margin-right: 2em;
 }
 
+/* Hier geef ik alle sections iets meer ruimte binnen en buiten de border */
 section {
     margin: 1em 0em;
-    padding: 1em;
+    padding: 1.5em;
 }
 
-section p {
-    margin-right: 50%;
-}
-
+/* Dit zorgt er voor dat elke section die gelijk is aan een even getal een witte achtergrond en een blauwe border krijgt */
 section:nth-child(even) {
     background: white;
     border:  rgb(68, 68, 160) solid 0.5em;
 }
 
+/* Dit zorgt er voor dat elke section die gelijk is aan een oneven getal een blauwe achtergrond en witte tekst krijgt */
 section:nth-child(odd) {
     background:  rgb(68, 68, 160);
     color: white;
 }
 
+/* Dit zet alle foto's en video thumnails met de class 'center' centraal op de website */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/* Dit zorgt er voor dat de foto's op de pagina 'routes' in tweetallen naast elkaar komen te staan */
+.routes section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Dit bepaald hoe de tabel op de pagina 'vooruitgang' er uit ziet */
 table {
     border: rgb(68, 68, 160) solid 0.5em;
     padding: 1em;
@@ -107,25 +172,53 @@ table {
     background: white;
 }
 
+/* Dit bepaald hoe de kleinere blokjes binnen de tabel er uit komen te zien */
 table tr td {
     border: rgb(68, 68, 160) solid 0.5em;
     padding: 1em;
 }
 
+/* Dit bepaald hoe het invul-vakje onderaan de 'vooruitgang' pagina er uit ziet */
+form input {
+    padding: 1.4em 3em;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Dit bepaald hoe de 'Ontvang uitslagen!' knop er uit ziet */
+form button {
+    padding: 1em 3em;
+    margin-left: 1em;
+    border: white solid 0.5em;
+    text-align: center;
+    background: rgb(68, 68, 160);
+    color: white;
+    font-size: 1em;
+}
+
+/* Dit zorgt er voor dat de tekst in de knop 'Ontvang uitslagen!' zwart wordt wanneer je er boven hangt met de muis */
+button:hover {
+    color: black;
+}
+
+/* Dit bepaald hoe de footer er uit ziet en dat de elementen h3, ul, h3 en ul naast elkaar komen te staan */
 footer {
-    background: lightblue;
+    background: rgb(200, 241, 255);
     color: rgb(100, 100, 100);
     padding: 2em;
     display: flex;
     flex-direction: row;
+    font-size: 80%;
 }
 
+/* Dit zorgt er voor dat de list-items in de footer ook horizontaal naast elkaar komen te staan */
 footer ul {
     display: flex;
     flex-direction: row;
     padding: 0em 3em;
 }
 
+/* Dit zorgt er voor dat de list-items in de footer een gelijke hoeveelheid ruimte tussen elkaar hebben */
 footer ul li {
     display: flex;
     justify-content: space-evenly;
