@@ -203,8 +203,8 @@ button:hover {
 
 /* Dit bepaald hoe de footer er uit ziet en dat de elementen h3, ul, h3 en ul naast elkaar komen te staan */
 footer {
-    background: rgb(200, 241, 255);
-    color: rgb(100, 100, 100);
+    background: rgb(80, 80, 80);
+    color: white;
     padding: 2em;
     display: flex;
     flex-direction: row;
