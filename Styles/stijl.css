@@ -214,6 +214,13 @@ section:nth-child(odd) {
     color: white;
 }
 
+/* Dit zorgt er voor dat de youtube filpmjes de juiste grootte hebben en de automatische border verdwijnt */
+iframe {
+    width: 560px;
+    height: 316px;
+    border: 0px;
+}
+
 /* Dit bepaald hoe de tabel op de pagina 'vooruitgang' er uit ziet */
 table {
     border: rgb(68, 68, 160) solid 0.5em;
