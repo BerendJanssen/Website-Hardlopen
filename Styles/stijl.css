@@ -66,6 +66,19 @@ nav ul li {
     margin: 5%;
     list-style-type: none;
     border-radius: 15%;
+    transition: 500ms;
+}
+
+nav ul li a {
+    transition: 500ms;
+}
+
+nav ul li:hover {
+    background: rgb(68, 68, 160);
+}
+
+nav ul li a:hover {
+    color: white;
 }
 
 /* Dit zorgt er voor dat de main tussen de zijkant van het scherm, de header en de footer wat extra ruimte heeft */
