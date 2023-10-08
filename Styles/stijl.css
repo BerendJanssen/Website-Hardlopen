@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    overflow: hidden;
 }
 
 /* Achtergrondfoto header */
@@ -45,7 +46,7 @@ a:active {
 /* karaktieristieken h1 */
 h1 {
     font-size: 2em;
-    padding: 1em;
+    padding: 2.1%;
     background: rgb(68, 68, 160);
     color: white;
     border-radius: 15%;
@@ -62,21 +63,25 @@ nav ul {
 /* Dit bepaald hoe de navigatiemenu-knopjes er uit zien */
 nav ul li {
     background: white;
-    padding: 1em;
-    margin: 5%;
+    padding: 2.5%;
+    margin: 5% 10% 5% 0%;
     list-style-type: none;
     border-radius: 15%;
     transition: 500ms;
 }
 
+/* Dit zorgt er voor dat er een soepele transition van kleur is wanneer je met je muis boven de tekst in het navigatiemenu hangt */
 nav ul li a {
     transition: 500ms;
+    font-size: 100%;
 }
 
+/* Dit zorgt er voor dat de padding rond de tekst in het navigatiemenu blauw wordt als je er overheen hangt met je muis */
 nav ul li:hover {
     background: rgb(68, 68, 160);
 }
 
+/* Dit zorgt er voor dat de tekst in het navigatiemenu wit wordt als je er boven hangt met je muis */
 nav ul li a:hover {
     color: white;
 }
@@ -91,9 +96,25 @@ img {
     margin: 1em;
 }
 
-/* Dit zorgt er voor dat specifiek de foto's op de homepagina de juiste ruimte tussen elkaar hebben*/
-.indexfotos {
-    margin: 0.5em;
+/* Dit zorgt er voor dat specifiek de foto's op de homepagina de juiste ruimte tussen elkaar hebben en er hetzelfde uit zien als de sections die nog komen */
+div {
+    background: white;
+    padding: 2em;
+    border:  rgb(68, 68, 160) solid 0.5em;
+    margin: 1em 0em;
+}
+
+/* Deze drie foto's zijn de enige die unieke groottes hebben, hier krijgen ze die */
+div img:nth-child(1) {
+    width: 20%;
+}
+
+div img:nth-child(2) {
+    width: 50%;
+}
+
+div img:nth-child(3) {
+    width: 20%;
 }
 
 /* Dit zet de h3 en link tekst onderop de homepagina centraal */
@@ -150,6 +171,11 @@ h4 {
 section {
     margin: 1em 0em;
     padding: 1.5em;
+}
+
+/* Dit zorgt er voor dat de grootte van de foto's zich aanpassen aan de breedte van het scherm */
+img {
+    width: 30%;
 }
 
 /* Dit zorgt er voor dat elke section die gelijk is aan een even getal een witte achtergrond en een blauwe border krijgt */
