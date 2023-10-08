@@ -194,7 +194,14 @@ section:nth-child(odd) {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+/* Dit zorgt er voor dat de youtube filpmjes de juiste grootte hebben en de automatische border verdwijnt */
+iframe {
+    width: 560px;
+    height: 316px;
+    border: 0px;
+}
   
 /* Dit zorgt er voor dat de foto's op de pagina 'routes' in tweetallen naast elkaar komen te staan */
 .routes div {
@@ -212,13 +219,6 @@ section:nth-child(odd) {
 .routes div:nth-child(odd) {
     background:  rgb(68, 68, 160);
     color: white;
-}
-
-/* Dit zorgt er voor dat de youtube filpmjes de juiste grootte hebben en de automatische border verdwijnt */
-iframe {
-    width: 560px;
-    height: 316px;
-    border: 0px;
 }
 
 /* Dit bepaald hoe de tabel op de pagina 'vooruitgang' er uit ziet */
