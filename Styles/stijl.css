@@ -2,7 +2,6 @@
 body {
     background: rgb(200, 200, 200);
     font-family: 'Arial Black', Arial;
-    font-weight: 16px;
 }
 
 /* Dit zet de elementen, h1 en de nav, naast elkaar */
@@ -97,7 +96,7 @@ img {
 }
 
 /* Dit zorgt er voor dat specifiek de foto's op de homepagina de juiste ruimte tussen elkaar hebben en er hetzelfde uit zien als de sections die nog komen */
-div {
+.tcsfotos {
     background: white;
     padding: 2em;
     border:  rgb(68, 68, 160) solid 0.5em;
@@ -105,15 +104,15 @@ div {
 }
 
 /* Deze drie foto's zijn de enige die unieke groottes hebben, hier krijgen ze die */
-div img:nth-child(1) {
+.tcsfotos img:nth-child(1) {
     width: 20%;
 }
 
-div img:nth-child(2) {
+.tcsfotos img:nth-child(2) {
     width: 50%;
 }
 
-div img:nth-child(3) {
+.tcsfotos img:nth-child(3) {
     width: 20%;
 }
 
@@ -198,9 +197,21 @@ section:nth-child(odd) {
   }
   
 /* Dit zorgt er voor dat de foto's op de pagina 'routes' in tweetallen naast elkaar komen te staan */
-.routes section {
+.routes div {
     display: flex;
     justify-content: space-evenly;
+    margin: 1em 0em;
+    padding: 1.5em;
+}
+
+.routes div:nth-child(even) {
+    background: white;
+    border:  rgb(68, 68, 160) solid 0.5em;
+}
+
+.routes div:nth-child(odd) {
+    background:  rgb(68, 68, 160);
+    color: white;
 }
 
 /* Dit bepaald hoe de tabel op de pagina 'vooruitgang' er uit ziet */
