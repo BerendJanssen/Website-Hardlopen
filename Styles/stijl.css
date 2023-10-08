@@ -34,6 +34,7 @@ a:visited {
 a:hover {
     color: rgb(68, 68, 160);
     text-decoration: none;
+    transition: 400ms;
 }
   
 /* Link terwijl die geklikt wordt */
@@ -256,6 +257,7 @@ form button {
 /* Dit zorgt er voor dat de tekst in de knop 'Ontvang uitslagen!' zwart wordt wanneer je er boven hangt met de muis */
 button:hover {
     color: black;
+    transition: 400ms;
 }
 
 /* Dit bepaald hoe de footer er uit ziet en dat de elementen h3, ul, h3 en ul naast elkaar komen te staan */
